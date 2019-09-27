@@ -19,15 +19,15 @@ class InstaList extends StatelessWidget {
               mainAxisSize: MainAxisSize.min,
               children: <Widget>[
                 Padding(
-                  padding: EdgeInsets.fromLTRB(16, 10, 8, 16),
+                  padding: EdgeInsets.fromLTRB(10, 10, 8, 8),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[
                       Row(
                         children: <Widget>[
                           Container(
-                            height: 40,
-                            width: 40,
+                            height: 45,
+                            width: 45,
                             decoration: BoxDecoration(
                                 shape: BoxShape.circle,
                                 image: DecorationImage(
@@ -60,7 +60,7 @@ class InstaList extends StatelessWidget {
                   ),
                 ),
                 Padding(
-                  padding: EdgeInsets.all(16.0),
+                  padding: EdgeInsets.all(14.0),
                   child: Row(
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: <Widget>[

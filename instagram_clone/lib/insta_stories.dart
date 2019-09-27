@@ -36,7 +36,7 @@ final stories = Expanded(
                 image: NetworkImage("https://avatars3.githubusercontent.com/u/20722807?s=460&v=4")
               )
             ),
-            margin: EdgeInsets.symmetric(horizontal: 8.0),
+            margin: EdgeInsets.symmetric(horizontal: 6.0),
           ),
          index == 0?Positioned(
            right: 10,
