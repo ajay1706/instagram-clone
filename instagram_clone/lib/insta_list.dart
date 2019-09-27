@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:instagram_clone/insta_stories.dart';
 
 class InstaList extends StatelessWidget {
@@ -10,14 +11,14 @@ class InstaList extends StatelessWidget {
       itemBuilder: (context , index)=> index==0
       ? new SizedBox(
         child: InstaStories(),
-        height: deviceSize.height *0.15,
+        height: deviceSize.height *0.14,
       ):Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
         mainAxisSize: MainAxisSize.min,
         children: <Widget>[
           Padding(
-            padding: EdgeInsets.fromLTRB(16, 16, 8, 16),
+            padding: EdgeInsets.fromLTRB(16, 10, 8, 16),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: <Widget>[
@@ -52,7 +53,41 @@ class InstaList extends StatelessWidget {
           ),
           Flexible(
             fit: FlexFit.loose,
-            child: Image.network("https://avatars3.githubusercontent.com/u/20722807?s=460&v=4"),
+            child: Image.network("https://avatars3.githubusercontent.com/u/20722807?s=460&v=4,",
+            fit: BoxFit.cover,),
+            
+          ),
+          Padding(
+            padding: EdgeInsets.all(16.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: <Widget>[
+
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: <Widget>[
+                    Icon(FontAwesomeIcons.heart),
+                    SizedBox(
+                      width: 16.0,
+                    ),
+                    Icon(
+                      FontAwesomeIcons.comment,
+                    ),
+                      SizedBox(
+                      width: 16.0,
+                    ),
+                      Icon(
+                      FontAwesomeIcons.paperPlane,
+                    ),
+                    
+                  ],
+                ),
+                Icon(FontAwesomeIcons.bookmark)
+
+
+
+              ],
+            ),
           )
         ],
       ),

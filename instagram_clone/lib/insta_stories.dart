@@ -27,8 +27,8 @@ final stories = Expanded(
         alignment: Alignment.bottomRight,
         children: <Widget>[
           Container(
-            width: 60,
-            height: 60,
+            width: 65,
+            height: 65,
             decoration: BoxDecoration(  
               shape: BoxShape.circle,
               image: DecorationImage(  
@@ -58,7 +58,7 @@ final stories = Expanded(
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.all(16.0),
+      margin: EdgeInsets.all(14.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.stretch,
