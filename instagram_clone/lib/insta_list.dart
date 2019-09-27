@@ -4,11 +4,13 @@ import 'package:instagram_clone/insta_stories.dart';
 class InstaList extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+    var deviceSize = MediaQuery.of(context).size;
     return ListView.builder(
-      itemCount: 5,
+      itemCount: 10,
       itemBuilder: (context , index)=> index==0
       ? new SizedBox(
         child: InstaStories(),
+        height: deviceSize.height *0.15,
       ):Column(),
       
     );

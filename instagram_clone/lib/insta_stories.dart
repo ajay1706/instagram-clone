@@ -17,6 +17,41 @@ children: <Widget>[
 ],
 );
 
+final stories = Expanded(
+  child: Padding(
+    padding: const EdgeInsets.only(top:8.0),
+    child: ListView.builder(
+      scrollDirection: Axis.horizontal,
+      itemCount: 10,
+      itemBuilder: (context , index) => Stack(
+        alignment: Alignment.bottomRight,
+        children: <Widget>[
+          Container(
+            width: 60,
+            height: 60,
+            decoration: BoxDecoration(  
+              shape: BoxShape.circle,
+              image: DecorationImage(  
+                fit: BoxFit.fill,
+                image: NetworkImage("https://avatars3.githubusercontent.com/u/20722807?s=460&v=4")
+              )
+            ),
+            margin: EdgeInsets.symmetric(horizontal: 8.0),
+          ),
+         index == 0?Positioned(
+           right: 10,
+           child: CircleAvatar(
+             backgroundColor: Colors.blueAccent,
+             radius: 10.0,
+             child: Icon(Icons.add,size: 14.0,color: Colors.white,),
+           ),
+         ) : Container()
+        ],
+      ),
+    ),
+  ),
+);
+
 
 
 
@@ -30,7 +65,7 @@ children: <Widget>[
         children: <Widget>[
 
           topText,
-          // stories,
+          stories,
 
         ],
       ),
