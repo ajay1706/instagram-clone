@@ -127,6 +127,11 @@ class InstaList extends StatelessWidget {
                       )
                     ],
                   ),
+                ),
+
+                Padding(
+                  padding: EdgeInsets.symmetric(horizontal: 16),
+                  child: Text("1 Day Ago", style:TextStyle(color: Colors.grey)),
                 )
 
 
